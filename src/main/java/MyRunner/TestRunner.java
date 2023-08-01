@@ -13,15 +13,15 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		//features = the path of the feature file
-		features = "C:\\Users\\Lajja Patel\\OneDrive\\Desktop\\MySelenium57\\Cucumber\\CucumberWorkspace\\FreeCrmBDDFramework\\src\\main\\java\\Features\\tagging.feature",  
+		features = "C:\\Users\\Lajja Patel\\OneDrive\\Desktop\\MySelenium57\\Cucumber\\CucumberWorkspace\\FreeCrmBDDFramework\\src\\main\\java\\Features\\taggedhooks.feature",  
 		glue = {"stepDefinations"}, //glue= your name of the stepdefination package
 		//format is use for different types of reporting ,, replace format with plugin as format got depreciated for certain versions
 		//plugin = { "pretty" ,   "json:json_output/cucumber.json" , "junit:junit_xml/cucumber.xml","html : test-output "}, getting error with html
 		monochrome = true, //display the console output in a proper readable format
 		//strict has been decommissioned starting from Cucumber 7.0.0
 		//strict = true, // it will check if any step is not defined in step defination file
-		dryRun = false, // to check the mapping is proper between feature file and step defination file
-		tags = "(not @SmokeTest) and (not @RegressionTest) and (not @End2End)"
+		dryRun = false // to check the mapping is proper between feature file and step defination file
+		//tags = "(not @SmokeTest) and (not @RegressionTest) and (not @End2End)"
 		)
 
 public class TestRunner {
